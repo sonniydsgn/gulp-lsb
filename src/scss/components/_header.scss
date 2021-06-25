@@ -1,0 +1,26 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  background-color: var(--color-white);
+  transition: var(--default);
+
+  &.sticky {
+    background-color: var(--color-black);
+  }
+
+  &__inner {
+
+  }
+
+  @include sm-tablet {
+    padding: 1rem 0;
+    background-color: var(--color-black);
+  }
+}
+
+.logo {
+  margin-right: auto;
+}

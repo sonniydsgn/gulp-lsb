@@ -1,0 +1,10 @@
+// Главное
+@import "vendor";
+@import "mixins";
+@import "global";
+
+// Блоки сайта
+@import "./components/btn";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/footer";

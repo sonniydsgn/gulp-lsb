@@ -1,0 +1,33 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  color: var(--color-black);
+  font: var(--primary);
+  background-color: var(--color-white);
+}
+
+body.lock {
+  overflow-y: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1230px;
+  width: 100%;
+}
+
+.visually-hidden {
+  margin: -1px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}

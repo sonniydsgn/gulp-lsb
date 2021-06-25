@@ -1,0 +1,26 @@
+:root {
+  // основные цвета
+  --color-primary: #2d2d2d;
+  --color-bg: #f9f9f9;
+
+  // остальные цвета
+  --color-black: #000;
+  --color-white: #fff;
+
+  // размеры шрифтов
+  --font-primary: 1rem;
+  --font-xs: 0.8rem;
+  --font-s: 0.93rem;
+  --font-m: 1.06rem;
+  --font-l: 1.2rem;
+
+  // семейство шрифтов
+  --ff-primary: "Montserrat", sans-serif;
+
+  // наборы шрифтов
+  --title: 700 7.33rem / 1 var(--ff-title);
+  --primary: 400 1rem / 1 var(--ff-primary);
+
+  // анимация
+  --default: all 0.2s ease;
+}
