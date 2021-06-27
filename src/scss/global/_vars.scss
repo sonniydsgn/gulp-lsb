@@ -1,0 +1,34 @@
+:root {
+  // размеры 
+  --container: 1200px;
+  
+  --md1: 1200px;  // desktop
+  --md2: 992px;   // tablet
+  --md3: 767px;   // small tablet
+  --md4: 576px;   // mobile
+  --md5: 420px;   // small mobile
+
+  // основные цвета
+  --color-primary: #2d2d2d;
+  --color-bg: #f9f9f9;
+
+  // остальные цвета
+  --color-black: #000;
+  --color-white: #fff;
+
+  // семейство шрифтов
+  --ff-primary: "Montserrat", sans-serif;
+
+  // размеры шрифтов
+  --font-primary: 1rem;
+  --font-xs: 0.8rem;
+  --font-s: 0.93rem;
+  --font-m: 1.06rem;
+  --font-l: 1.2rem;
+
+  // z-index
+  --zd1: 1;
+  --zd2: 2;
+  --zd3: 3;
+  --zd4: 4;
+}
