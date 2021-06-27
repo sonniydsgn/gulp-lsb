@@ -1,0 +1,26 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  color: var(--color-black);
+  font-family: var(--ff-primary);
+  font-size: var(--font-primary);
+  background-color: var(--color-bg);
+
+  &.lock {
+    overflow-y: hidden;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: calc( var(--container) + 2rem );
+  width: 100%;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
