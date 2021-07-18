@@ -525,19 +525,7 @@
 		"comment-whitespace-inside": "always",
 		"comment-word-blacklist": null,
 		"custom-media-pattern": null,
-		"custom-property-empty-line-before": [
-			"always",
-			{
-				"except": [
-					"after-custom-property",
-					"first-nested"
-				],
-				"ignore": [
-					"after-comment",
-					"inside-single-line-block"
-				]
-			}
-		],
+		"custom-property-empty-line-before": null,
 		"custom-property-pattern": null,
 		"declaration-bang-space-after": "never",
 		"declaration-bang-space-before": "always",
