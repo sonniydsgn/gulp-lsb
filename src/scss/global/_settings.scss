@@ -1,13 +1,13 @@
 html {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 body {
   margin: 0;
-  color: var(--color-primary);
+  color: var(--text-primary);
   font-family: var(--ff-primary);
-  font-size: var(--font-primary);
-  background-color: var(--color-bg);
+  font-size: var(--f-primary);
+  background-color: var(--bg-color);
 
   &.lock {
     overflow-y: hidden;
@@ -16,8 +16,8 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 1rem;
-  max-width: calc( var(--container) + 2rem );
+  padding: 0 1.5rem;
+  max-width: calc(var(--container) + 3rem);
   width: 100%;
 }
 
