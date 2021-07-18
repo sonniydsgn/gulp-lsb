@@ -1,22 +1,22 @@
-const {src, dest, series, watch} = require('gulp');
-const autoprefixer = require('gulp-autoprefixer');
-const babel = require('gulp-babel');
-const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify-es').default;
-const del = require('del');
-const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass')(require('sass'));
-const fileInclude = require('gulp-file-include');
-const sourcemaps = require('gulp-sourcemaps');
-const rev = require('gulp-rev');
-const revRewrite = require('gulp-rev-rewrite');
-const revDel = require('gulp-rev-delete-original');
-const htmlmin = require('gulp-htmlmin');
-const gulpif = require('gulp-if');
-const notify = require('gulp-notify');
-const image = require('gulp-image');
-const { readFileSync } = require('fs');
-const concat = require('gulp-concat');
+const {src, dest, series, watch} = require('gulp'),
+      autoprefixer = require('gulp-autoprefixer'),
+      babel = require('gulp-babel'),
+      cleanCSS = require('gulp-clean-css'),
+      uglify = require('gulp-uglify-es').default,
+      del = require('del'),
+      browserSync = require('browser-sync').create(),
+      sass = require('gulp-sass')(require('sass')),
+      fileInclude = require('gulp-file-include'),
+      sourcemaps = require('gulp-sourcemaps'),
+      rev = require('gulp-rev'),
+      revRewrite = require('gulp-rev-rewrite'),
+      revDel = require('gulp-rev-delete-original'),
+      htmlmin = require('gulp-htmlmin'),
+      gulpif = require('gulp-if'),
+      notify = require('gulp-notify'),
+      image = require("gulp-image"),
+      { readFileSync } = require('fs'),
+      concat = require('gulp-concat');
 
 let isProd = false; // dev by default
 
@@ -74,7 +74,11 @@ const images = () => {
   return src([
 		'./src/img/**/*.+(png|jpg|gif|ico|svg|webp)'
 		])
-    .pipe(gulpif(isProd, image()))
+    .pipe(gulpif(isProd, 
+      image({
+        svgo: ['--disable', 'cleanupIDs']
+      })
+    ))
     .pipe(dest('./app/img'))
 };
 
@@ -93,6 +97,8 @@ const watchFiles = () => {
     server: {
       baseDir: "./app"
     },
+    port: 3000,
+		notify: false
   });
 
   watch('./src/scss/**/*.scss', styles);
@@ -130,6 +136,7 @@ const rewrite = () => {
 const htmlMinify = () => {
 	return src('app/**/*.html')
 		.pipe(htmlmin({
+      removeComments: true,
 			collapseWhitespace: true
 		}))
 		.pipe(dest('app'));
