@@ -10,12 +10,12 @@
   "author": "lostsleepyboii",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
     "babel-loader": "^8.2.2",
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.27.4",
     "del": "^6.0.0",
-    "editorconfig-checker": "^4.0.1",
+    "editorconfig-checker": "^4.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
@@ -34,10 +34,10 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
     "node-w3c-validator": "^2.0.1",
-    "sass": "^1.35.1",
-    "stylelint": "^13.9.0",
+    "sass": "^1.35.2",
+    "stylelint": "^13.13.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-scss": "^3.20.0"
   }
 }
