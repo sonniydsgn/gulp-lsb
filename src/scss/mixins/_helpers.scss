@@ -1,0 +1,23 @@
+@mixin flex-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin grid-autofit ($min, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
+}
+
+@mixin bgi {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
