@@ -1,29 +1,29 @@
 @mixin desktop {
-  @media (max-width: var(--md1)) {
+  @media (max-width: $bp1) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (max-width: var(--md2)) {
+  @media (max-width: $bp2) {
     @content;
   }
 }
 
 @mixin sm-tablet {
-  @media (max-width: var(--md3)) {
+  @media (max-width: $bp3) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media (max-width: var(--md4)) {
+  @media (max-width: $bp4) {
     @content;
   }
 }
 
 @mixin sm-mobile {
-  @media (max-width: var(--md5)) {
+  @media (max-width: $bp5) {
     @content;
   }
 }
