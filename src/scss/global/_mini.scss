@@ -1,4 +1,4 @@
-.visually-hidden {
+._visually-hidden {
   margin: -1px;
   position: absolute;
   width: 1px;
@@ -6,30 +6,29 @@
   clip: rect(0 0 0 0);
 }
 
-.bg-cover {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+._logo {
+  margin-right: auto;
+  transition: opacity 0.2s ease;
+    
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.flex-ac {
-  display: flex;
-  align-items: center;
+._btn {
+  cursor: pointer;
+  background-color: var(--btn-color);
+  transition: background-color 0.2s ease;
+
+  &:focus {}
+  &:hover {}
 }
 
-.flex-jc {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-all {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-all-sb {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+._icon {
+  fill: var(--accent);
+  transition: fill 0.2s ease;
 }

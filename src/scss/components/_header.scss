@@ -2,25 +2,19 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 3;
+  z-index: var(--zd3);
   width: 100%;
-  background-color: var(--color-white);
-  transition: var(--default);
+  background-color: var(--white);
+  transition: background-color 0.2s ease;
 
   &.sticky {
-    background-color: var(--color-black);
+    background-color: var(--black);
   }
 
-  &__inner {
-
-  }
+  &__inner {}
 
   @include sm-tablet {
     padding: 1rem 0;
-    background-color: var(--color-black);
+    background-color: var(--black);
   }
-}
-
-.logo {
-  margin-right: auto;
 }

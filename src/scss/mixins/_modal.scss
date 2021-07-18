@@ -25,7 +25,7 @@
     position: relative;
     opacity: 0;
     transform: rotateY(90deg);
-    transition: var(--default);
+    transition: all 0.2s ease;
 
     &.animate {
       opacity: 1;
@@ -33,28 +33,18 @@
     }
   }
 
-  &__form {
-
-  }
+  &__form {}
 
   &__input {
-    transition: var(--default);
+    transition: all 0.2s ease;
 
-    &--name {
-      
-    }
+    &--name {}
 
-    &--phone {
-      
-    }
+    &--phone { }
 
-    &--email {
-      
-    }
+    &--email {}
 
-    &:focus {
-
-    }
+    &:focus {}
   }
 
   &__title {
@@ -69,7 +59,7 @@
   height: 20px;
   cursor: pointer;
   background-color: transparent;
-  transition: var(--default);
+  transition: all 0.2s ease;
   
   &::before,
   &::after {
@@ -78,7 +68,7 @@
     display: flex;
     width: 100%;
     height: 2px;
-    background-color: var(--color-white);
+    background-color: var(--white);
   }
 
   &::before {
@@ -92,7 +82,7 @@
   &:hover {
     &::before,
     &::after {
-      background-color: var(--color-lightgray);
+      background-color: var(--black);
     }
   }
 }
