@@ -1,31 +1,41 @@
+// Брейкоинты
+$bp1: 1200px;  // desktop
+$bp2: 1100px;  // tablet
+$bp3: 767px;   // small tablet
+$bp4: 576px;   // mobile
+$bp5: 420px;   // small mobile
+
 :root {
-  // размеры 
-  --container: 1200px;
-  
-  --md1: 1200px;  // desktop
-  --md2: 992px;   // tablet
-  --md3: 767px;   // small tablet
-  --md4: 576px;   // mobile
-  --md5: 420px;   // small mobile
+  // размеры
+  --container: 1220px;
+
 
   // основные цвета
-  --color-primary: #444;
-  --color-accent: #68b738;
-  --color-bg: #f9f9f9;
+  --primary: #444;
+  --accent: #3cc8aa;
+
+  // цвета элементов
+  --bg-color: var(--white);
+  --border-color: #f2f2f2;
+  --btn-color: var(--accent);
+  --text-primary: var(--primary);
 
   // остальные цвета
-  --color-black: #000;
-  --color-white: #fff;
+  --black: #000;
+  --white: #fff;
 
-  // семейство шрифтов
-  --ff-primary: "Montserrat", sans-serif;
 
   // размеры шрифтов
-  --font-primary: 1rem;
-  --font-xs: 0.8rem;
-  --font-s: 0.93rem;
-  --font-m: 1.06rem;
-  --font-l: 1.2rem;
+  --f-primary: 1.6rem;
+
+  --f-xs: 1.4rem;
+  --f-s: 2rem;
+  --f-m: 3rem;
+
+  // семейство шрифтов
+  --ff-primary: "Roboto", sans-serif;
+  --ff-title: "Montserrat", sans-serif;
+
 
   // z-index
   --zd1: 1;
