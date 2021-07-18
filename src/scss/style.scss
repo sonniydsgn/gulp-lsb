@@ -3,8 +3,6 @@
 @import "mixins";
 @import "global";
 
-// Блоки сайта
-@import "./components/btn";
+// Компоненты сайта
 @import "./components/header";
 @import "./components/nav";
-@import "./components/footer";
