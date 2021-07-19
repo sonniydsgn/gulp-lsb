@@ -24,8 +24,11 @@
   background-color: var(--btn-color);
   transition: background-color 0.2s ease;
 
-  &:focus {}
-  &:hover {}
+  &:focus {
+  }
+  
+  &:hover {
+  }
 }
 
 ._icon {

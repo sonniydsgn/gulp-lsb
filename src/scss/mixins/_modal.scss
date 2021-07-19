@@ -33,18 +33,23 @@
     }
   }
 
-  &__form {}
+  &__form {
+  }
 
   &__input {
     transition: all 0.2s ease;
 
-    &--name {}
+    &--name {
+    }
 
-    &--phone { }
+    &--phone {
+    }
+    
+    &--email {
+    }
 
-    &--email {}
-
-    &:focus {}
+    &:focus {
+    }
   }
 
   &__title {
