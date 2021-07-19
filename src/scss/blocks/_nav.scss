@@ -1,7 +1,8 @@
 .nav {
   display: inline-flex;
 
-  &__link {}
+  &__link {
+  }
 
   @include sm-tablet {
     position: fixed;
