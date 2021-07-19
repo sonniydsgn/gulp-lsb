@@ -30,6 +30,16 @@ const styles = () => {
     .pipe(sass().on("error", notify.onError()))
     .pipe(autoprefixer({
       cascade: false,
+      overrideBrowserslist: ['last 8 versions'],
+      browsers: [
+        'Android >= 4',
+        'Chrome >= 20',
+        'Firefox >= 24',
+        'Explorer >= 11',
+        'iOS >= 6',
+        'Opera >= 12',
+        'Safari >= 6',
+      ],
     }))
     .pipe(gulpif(isProd, cleanCSS({ level: 2 })))
     .pipe(gulpif(!isProd, sourcemaps.write('.')))
@@ -42,6 +52,16 @@ const stylesBackend = () => {
 		.pipe(sass().on("error", notify.onError()))
     .pipe(autoprefixer({
       cascade: false,
+      overrideBrowserslist: ['last 8 versions'],
+      browsers: [
+        'Android >= 4',
+        'Chrome >= 20',
+        'Firefox >= 24',
+        'Explorer >= 11',
+        'iOS >= 6',
+        'Opera >= 12',
+        'Safari >= 6',
+      ],
 		}))
 		.pipe(dest('./app/css/'))
 };
@@ -103,7 +123,7 @@ const watchFiles = () => {
 
   watch('./src/scss/**/*.scss', styles);
   watch('./src/js/**/*.js', scripts);
-  watch('./src/partials/*.html', htmlInclude);
+  watch('./src/components/page-blocks/*.html', htmlInclude);
   watch('./src/*.html', htmlInclude);
   watch('./src/fonts/**', fonts);
   watch('./src/img/**/*.+(png|jpg|gif|ico|svg|webp)', images);
